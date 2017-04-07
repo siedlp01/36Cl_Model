@@ -1,0 +1,172 @@
+
+ve_values = [
+0      6.321418794;
+500	   6.2836;
+1000   6.2074;
+1500   6.1694;
+2000   6.1073;
+2500   6.0691;
+3000   6.0221;
+3500   5.9835;
+4000   5.9525;
+4500   5.9137;
+5000   5.8992;
+5500   5.86;
+6000   5.8631;
+6500   5.8235;
+7000   5.8332;
+7500   5.8044;
+8000   5.8136;
+8500   5.8034;
+9000   5.8119;
+9500   5.8204;
+10000  5.8282;
+];
+
+ma1_values = [
+0    1.9488;
+500 1.8871;
+1000 1.839;
+1500 1.8057;
+2000 1.7881;
+2500 1.7521;
+3000 1.7136;
+3500 1.6917;
+4000 1.687;
+4500 1.6997;
+5000 1.7294;
+5500 1.7755;
+6000 1.8103;
+];
+
+ma2_values = [
+0    4.2867;
+500 4.1856;
+1000 4.0745;
+1500 3.9769;
+2000 3.8713;
+2500 3.7684;
+3000 3.6786;
+3500 3.57;
+4000 3.4774;
+4500 3.3837;
+5000 3.2861;
+5500 3.2065;
+6000 3.1087;
+6500 3.0248;
+7000 2.948;
+7500 2.8597;
+8000 2.7932;
+8500 2.7143;
+9000 2.6448;
+9500 2.5916;
+10000 2.5198; 
+10500 2.474; 
+11000 2.4219; 
+11500 2.3751;
+12000 2.3542; 
+12500 2.3074;
+13000 2.2906;
+13500 2.2733; 
+14000 2.258; 
+14500 2.2738;
+15000 2.2611;
+15500 2.2784;
+16000 2.2998;
+16500 2.3188; 
+];
+
+ma3_values = [
+0     1.1901;
+500 1.0702;
+1000 0.96178;
+1500 0.88914;
+2000 0.86192;
+2500 0.88459;
+3000 0.9448;
+3500 0.93036;
+4000 0.96265;
+4500 1.0379;
+5000 1.1485;
+5500 1.2847;
+6000 1.3974;
+6500 1.4888;
+7000 1.6039;
+7500 1.7387;
+8000 1.8888;
+];
+
+ma4_values = [
+0    2.7766;
+500  2.7636;
+1000 2.7399;
+1500 2.7127;
+2000 2.6907;
+2500 2.674;
+3000 2.6627;
+3500 2.6569;
+4000 2.6564;
+4500 2.6362;
+5000 2.6214;
+5500 2.6123;
+6000 2.6089;
+6500 2.6113;
+7000 2.6193;
+7500 2.6222;
+8000 2.6157;
+8500 2.6149;
+9000 2.62;
+9500 2.6308;
+10000 2.6473; 
+10500 2.6695;
+11000 2.6748; 
+11500 2.6825; 
+12000 2.696; 
+12500 2.7152; 
+13000 2.7397; 
+13500 2.7698; 
+14000 2.7955; 
+14500 2.8114; 
+15000 2.8327; 
+];
+
+
+figure('Name', 'VE site');
+hold on;
+plot(ve_values(:,1), ve_values(:,2), '-r', 'LineWidth', 2);
+title('Variation between the correlation and pre-exposure for site VE');
+ylabel('Weighted root mean square (lower is better)');
+xlabel('Pre-exposure history (yr)');
+hold off;
+
+figure('Name', 'MA1 site');
+hold on;
+plot(ma1_values(:,1), ma1_values(:,2), '-r', 'LineWidth', 2);
+title('Variation between the correlation and pre-exposure for site MA1');
+ylabel('Weighted root mean square (lower is better)');
+xlabel('Pre-exposure history (yr)');
+hold off;
+
+figure('Name', 'MA2 site');
+hold on;
+plot(ma2_values(:,1), ma2_values(:,2), '-r', 'LineWidth', 2);
+title('Variation between the correlation and pre-exposure for site MA2');
+ylabel('Weighted root mean square (lower is better)');
+xlabel('Pre-exposure history (yr)');
+hold off;
+
+figure('Name', 'MA3 site');
+hold on;
+plot(ma3_values(:,1), ma3_values(:,2), '-r', 'LineWidth', 2);
+title('Variation between the correlation and pre-exposure for site MA3');
+ylabel('Weighted root mean square (lower is better)');
+xlabel('Pre-exposure history (yr)');
+hold off;
+
+figure('Name', 'MA4 site');
+hold on;
+plot(ma4_values(:,1), ma4_values(:,2), '-r', 'LineWidth', 2);
+title('Variation between the correlation and pre-exposure for site MA4');
+ylabel('Weighted root mean square (lower is better)');
+xlabel('Pre-exposure history (yr)');
+hold off;
